@@ -25,15 +25,15 @@ OpenWeather API, dunyodagi ob-havo ma'lumotlarini taqdim etuvchi umummiy (qo'lla
 
 
 baseURL: `/https://api.weatherapi.com/v1`
-final: `/current.json?key={key}&q={city}`
+final: `/current.json?key={key}&q={city}` or `/forecast.json?key={key}&days={day_number}&q={city}`
 
-[GET] `/` endpoint uchun
-
+[GET] `/current.json` endpoint Bugungi ma'lumot  uchun
+[GET] `/forecast.json` endpoint Bir necha kun  uchun ma'lumot
 | Parameter | value      |
 | --------- | ---------- |
 | `q`       | "Toshkent" |
 | `key`     | api_key    |
-
+| `days`    | day_number |
 
 - [GET]: Bugungi ohirgi ma'lumot uchun : `https://api.weatherapi.com/v1/current.json?key={key}&q={city}`
 - [GET]: Bir necha kunlik "prognoz" uchun : `https://api.weatherapi.com/v1/forecast.json?key={key}&days={day_number}&q={city}`
