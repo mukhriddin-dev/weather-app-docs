@@ -32,6 +32,12 @@ final: `/current.json?key={key}&q={city}`
 | Parameter | value      |
 | --------- | ---------- |
 | `q`       | "Toshkent" |
-| `key`   | api_key    |
+| `key`     | api_key    |
+
+
+- [GET]: Bugungi ohirgi ma'lumot uchun : `https://api.weatherapi.com/v1/current.json?key={key}&q={city}`
+- [GET]: Bir necha kunlik "prognoz" uchun : `https://api.weatherapi.com/v1/forecast.json?key={key}&days={day_number}&q={city}`
+
+
 
 
