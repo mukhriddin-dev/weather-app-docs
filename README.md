@@ -4,19 +4,17 @@
 
 OpenWeather API, dunyodagi ob-havo ma'lumotlarini taqdim etuvchi umummiy (qo'llanma) interfeysini (API) ta'minlovchi tizimdir. Bu API orqali siz dasturingizga har bir geografik nuqtasi uchun ob-havo ma'lumotlarini olishingiz mumkin.
 
-1. https://openweathermap.org saytidan ro'yhatdan o'tamiz 
+1. https://www.weatherapi.com/signup.aspx saytidan ro'yhatdan o'tamiz 
 
-![alt text](image.png)
+![alt text](image-2.png)
 
-2. Kerakli bo'limdan API key yaratib olaimz va davom etamiz !
+2. [Kerakli](https://www.weatherapi.com/my/) bo'limdan API key yaratib olaimz va davom etamiz !
 
-3. 
 
- ![alt text](image-1.png)
 
-- <code>api_key = 'SIZNING_API_KLUC'</code>
+- <code>key = 'SIZNING_API_KLUC'</code>
 - <code>city = 'Toshkent'</code>
-- <code> url = 'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}' </code>
+- <code> url = 'https://api.weatherapi.com/v1/current.json?key={key}&q={city}' </code>
 
 4. Loyihaning dizayni:
 
@@ -26,14 +24,14 @@ OpenWeather API, dunyodagi ob-havo ma'lumotlarini taqdim etuvchi umummiy (qo'lla
 ## Example request
 
 
+baseURL: `/https://api.weatherapi.com/v1`
+final: `/current.json?key={key}&q={city}`
 
-final: `/weather?q={city}&appid={api_key}`
-
-[GET] `/weather` endpoint uchun
+[GET] `/` endpoint uchun
 
 | Parameter | value      |
 | --------- | ---------- |
 | `q`       | "Toshkent" |
-| `appid`   | api_key    |
+| `key`   | api_key    |
 
 
